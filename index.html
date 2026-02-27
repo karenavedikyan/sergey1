@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дизайн-агентство | Ищем дизайнеров карточек маркетплейсов</title>
+    <meta name="description" content="Присоединяйтесь к агентству по созданию продающих карточек для Wildberries, Ozon и других маркетплейсов. Ищем 4 лучших дизайнера.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero__title">Ищем сильных дизайнеров карточек маркетплейсов</h1>
+            <p class="hero__subtitle">Присоединяйтесь к агентству по созданию продающих карточек для Wildberries, Ozon и других маркетплейсов. Мы ищем 4 лучших дизайнера для долгосрочной работы с реальными заказами, стабильным потоком и честной оплатой.</p>
+            <a href="#application" class="btn btn--primary">Хочу в команду</a>
+        </div>
+        <div class="hero__gradient"></div>
+    </header>
+
+    <main>
+        <section class="section section--about" id="about">
+            <div class="container">
+                <h2 class="section__title">О проекте и условиях</h2>
+                <div class="section__content text-block">
+                    <p>Агентство занимается созданием продающих карточек. Основатель команды (номер указан ниже) отвечает за поиск клиентов, продажи и контроль задач. Дизайнеры выполняют проекты качественно по техническому заданию (ТЗ).</p>
+                    <p><strong>Условия:</strong> удалённая работа, оплата за каждый проект, чёткое ТЗ, долгосрочное сотрудничество, деление прибыли <strong>40–50% дизайнеру.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--requirements" id="requirements">
+            <div class="container">
+                <h2 class="section__title">Требования и отбор</h2>
+                <div class="requirements-grid">
+                    <div class="requirements-card">
+                        <h3 class="requirements-card__title">Требования</h3>
+                        <ul class="requirements-list">
+                            <li>Опыт работы с карточками WB/Ozon</li>
+                            <li>Портфолио с примерами работ</li>
+                            <li>Соблюдение сроков</li>
+                            <li>Ответственность</li>
+                        </ul>
+                    </div>
+                    <div class="requirements-card">
+                        <h3 class="requirements-card__title">Этапы отбора</h3>
+                        <ol class="requirements-list requirements-list--numbered">
+                            <li>Заполнение заявки</li>
+                            <li>Проверка портфолио (3 лучшие работы)</li>
+                            <li>Тестовое задание</li>
+                            <li>Формирование основной команды из 4 дизайнеров</li>
+                        </ol>
+                    </div>
+                </div>
+                <p class="section__note">Количество мест ограничено.</p>
+            </div>
+        </section>
+
+        <section class="section section--contact" id="application">
+            <div class="container">
+                <h2 class="section__title">Контакты и заявка</h2>
+                <div class="contact-block">
+                    <p class="contact-text">Связь:</p>
+                    <a href="https://wa.me/79186360011" class="contact-link" target="_blank" rel="noopener noreferrer">+7 918 636 00 11</a>
+                    <span class="contact-meta">
+                        <a href="https://wa.me/79186360011" target="_blank" rel="noopener">WhatsApp</a> /
+                        <a href="https://t.me/+79186360011" target="_blank" rel="noopener">Telegram</a>
+                    </span>
+                </div>
+                <form class="application-form" id="applicationForm" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" required placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="telegram">Telegram</label>
+                        <input type="text" id="telegram" name="telegram" required placeholder="@username или ссылка">
+                    </div>
+                    <div class="form-group">
+                        <label for="portfolio">Ссылка на портфолио или 3 лучших работы</label>
+                        <input type="text" id="portfolio" name="portfolio" required placeholder="Ссылка или описание 3 лучших работ">
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Опыт работы</label>
+                        <textarea id="experience" name="experience" rows="3" required placeholder="Опишите ваш опыт работы с карточками маркетплейсов"></textarea>
+                    </div>
+                    <div class="form-group form-group--checkbox">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="test_task" name="test_task" required>
+                            <span>Готов(а) выполнить тестовое задание</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">© 2025 Дизайн-агентство карточек маркетплейсов</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
