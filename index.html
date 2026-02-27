@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ищем дизайнеров карточек маркетплейсов | Дизайн-агентство</title>
+    <meta name="description" content="Присоединяйтесь к агентству по созданию продающих карточек для Wildberries, Ozon и других маркетплейсов">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Ищем сильных дизайнеров карточек маркетплейсов</h1>
+            <p class="hero-subtitle">
+                Присоединяйтесь к агентству по созданию продающих карточек для Wildberries, Ozon и других маркетплейсов. 
+                Мы ищем 4 лучших дизайнера для долгосрочной работы с реальными заказами, стабильным потоком и честной оплатой.
+            </p>
+            <a href="#form" class="cta-button">Хочу в команду</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">О проекте и условиях</h2>
+            <div class="about-content">
+                <p>
+                    Агентство занимается созданием продающих карточек. Основатель команды (номер указан ниже) 
+                    отвечает за поиск клиентов, продажи и контроль задач. Дизайнеры выполняют проекты качественно 
+                    по техническому заданию (ТЗ).
+                </p>
+                <div class="conditions">
+                    <h3>Условия:</h3>
+                    <ul>
+                        <li>Удалённая работа</li>
+                        <li>Оплата за каждый проект</li>
+                        <li>Чёткое ТЗ</li>
+                        <li>Долгосрочное сотрудничество</li>
+                        <li>Деление прибыли 40–50% дизайнеру</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="requirements">
+        <div class="container">
+            <h2 class="section-title">Требования и отбор</h2>
+            <div class="requirements-grid">
+                <div class="requirements-block">
+                    <h3>Требования:</h3>
+                    <ul>
+                        <li>Опыт работы с карточками WB/Ozon</li>
+                        <li>Портфолио</li>
+                        <li>Соблюдение сроков</li>
+                        <li>Ответственность</li>
+                    </ul>
+                </div>
+                <div class="selection-block">
+                    <h3>Этапы отбора:</h3>
+                    <div class="selection-steps">
+                        <div class="step">
+                            <span class="step-number">1</span>
+                            <span class="step-text">Заполнение заявки</span>
+                        </div>
+                        <div class="step-arrow">→</div>
+                        <div class="step">
+                            <span class="step-number">2</span>
+                            <span class="step-text">Проверка портфолио (3 лучшие работы)</span>
+                        </div>
+                        <div class="step-arrow">→</div>
+                        <div class="step">
+                            <span class="step-number">3</span>
+                            <span class="step-text">Тестовое задание</span>
+                        </div>
+                        <div class="step-arrow">→</div>
+                        <div class="step">
+                            <span class="step-number">4</span>
+                            <span class="step-text">Формирование команды из 4 дизайнеров</span>
+                        </div>
+                    </div>
+                    <p class="limited-spots">⚡ Количество мест ограничено</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact" id="form">
+        <div class="container">
+            <h2 class="section-title">Контакты и форма заявки</h2>
+            <div class="contact-info">
+                <h3>Связь:</h3>
+                <div class="phone-links">
+                    <a href="tel:+79186360011" class="phone">+7 918 636 00 11</a>
+                    <div class="messenger-links">
+                        <a href="https://wa.me/79186360011" class="messenger-button whatsapp" target="_blank" rel="noopener">
+                            WhatsApp
+                        </a>
+                        <a href="https://t.me/+79186360011" class="messenger-button telegram" target="_blank" rel="noopener">
+                            Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="application-form" id="applicationForm">
+                <h3>Форма заявки</h3>
+                <div class="form-group">
+                    <label for="name">Имя *</label>
+                    <input type="text" id="name" name="name" required placeholder="Ваше имя">
+                </div>
+                
+                <div class="form-group">
+                    <label for="telegram">Telegram *</label>
+                    <input type="text" id="telegram" name="telegram" required placeholder="@username или ссылка">
+                </div>
+                
+                <div class="form-group">
+                    <label for="portfolio">Ссылка на портфолио или 3 лучших работы *</label>
+                    <textarea id="portfolio" name="portfolio" required placeholder="Ссылка на портфолио (Behance, Dribbble и т.д.) или ссылки на работы" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="experience">Опыт работы *</label>
+                    <textarea id="experience" name="experience" required placeholder="Опишите ваш опыт работы с карточками маркетплейсов" rows="4"></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="testTask" name="testTask" required>
+                        <span>Готов(а) выполнить тестовое задание *</span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="submit-button">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Дизайн-агентство карточек маркетплейсов. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
