@@ -348,16 +348,23 @@
                 testReady: document.getElementById('testReady').checked
             };
 
-            console.log('Form submitted:', formData);
-            alert('Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время.');
-            
             // In a real application, you would send this data to a server
             // fetch('/api/submit', {
             //     method: 'POST',
             //     headers: { 'Content-Type': 'application/json' },
             //     body: JSON.stringify(formData)
+            // })
+            // .then(response => response.json())
+            // .then(data => {
+            //     alert('Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время.');
+            //     this.reset();
+            // })
+            // .catch(error => {
+            //     alert('Произошла ошибка при отправке заявки. Пожалуйста, попробуйте позже.');
             // });
             
+            // For demonstration purposes, show success message
+            alert('Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время.');
             this.reset();
         });
     </script>
