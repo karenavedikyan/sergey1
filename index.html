@@ -18,9 +18,10 @@
       --muted: #a2acbc;
       --line: rgba(255, 255, 255, 0.1);
       --line-soft: rgba(255, 255, 255, 0.06);
-      --accent: #5476e9;
-      --accent-soft: #8ba4ff;
-      --accent-line: #b39a67;
+      --accent: #8f7bff;
+      --accent-soft: #c6b8ff;
+      --accent-line: #b39cff;
+      --accent-premium: #b39a67;
       --ok: #8ce0b4;
       --radius: 16px;
       --shadow: 0 24px 48px rgba(0, 0, 0, 0.36);
@@ -35,8 +36,8 @@
       margin: 0;
       padding: 0;
       color: var(--text);
-      background: radial-gradient(1000px 460px at 85% 0%, rgba(84, 118, 233, 0.16), transparent 65%),
-        radial-gradient(740px 360px at 8% 10%, rgba(179, 154, 103, 0.1), transparent 62%), var(--bg);
+      background: radial-gradient(1000px 460px at 85% 0%, rgba(179, 156, 255, 0.2), transparent 65%),
+        radial-gradient(740px 360px at 8% 10%, rgba(179, 154, 103, 0.08), transparent 62%), var(--bg);
       font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
       line-height: 1.6;
       scroll-behavior: smooth;
@@ -100,7 +101,7 @@
       content: "";
       width: 28px;
       height: 1px;
-      background: linear-gradient(to right, transparent, var(--accent-line), transparent);
+      background: linear-gradient(to right, transparent, var(--accent-line), var(--accent-premium), transparent);
     }
 
     .nav {
@@ -178,14 +179,14 @@
       border-radius: 12px;
       border: 1px solid transparent;
       background: linear-gradient(140deg, var(--accent), var(--accent-soft));
-      box-shadow: 0 12px 28px rgba(84, 118, 233, 0.34);
+      box-shadow: 0 12px 28px rgba(143, 123, 255, 0.34);
       padding: 13px 24px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .hero-cta:hover {
       transform: translateY(-1px);
-      box-shadow: 0 16px 30px rgba(84, 118, 233, 0.42);
+      box-shadow: 0 16px 30px rgba(143, 123, 255, 0.42);
     }
 
     .section {
@@ -237,7 +238,7 @@
     }
 
     .condition-card:hover {
-      border-color: rgba(179, 154, 103, 0.58);
+      border-color: rgba(179, 156, 255, 0.62);
       transform: translateY(-2px);
     }
 
@@ -312,7 +313,7 @@
       font-size: 0.79rem;
       line-height: 1;
       margin-top: 0.12rem;
-      background: rgba(84, 118, 233, 0.12);
+      background: rgba(179, 156, 255, 0.18);
     }
 
     .note {
@@ -359,7 +360,7 @@
 
     .contact-links a:hover {
       color: #edf2ff;
-      border-color: rgba(84, 118, 233, 0.68);
+      border-color: rgba(179, 156, 255, 0.74);
     }
 
     .contact-copy {
@@ -402,8 +403,8 @@
 
     input[type="text"]:focus,
     textarea:focus {
-      border-color: rgba(84, 118, 233, 0.72);
-      box-shadow: 0 0 0 4px rgba(84, 118, 233, 0.17);
+      border-color: rgba(179, 156, 255, 0.72);
+      box-shadow: 0 0 0 4px rgba(179, 156, 255, 0.2);
     }
 
     .checkbox-row {
@@ -429,14 +430,14 @@
       font-weight: 600;
       color: #f8faff;
       background: linear-gradient(140deg, var(--accent), var(--accent-soft));
-      box-shadow: 0 10px 24px rgba(84, 118, 233, 0.33);
+      box-shadow: 0 10px 24px rgba(143, 123, 255, 0.33);
       cursor: pointer;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .form-button:hover {
       transform: translateY(-1px);
-      box-shadow: 0 14px 28px rgba(84, 118, 233, 0.39);
+      box-shadow: 0 14px 28px rgba(143, 123, 255, 0.39);
     }
 
     .status {
