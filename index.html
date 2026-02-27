@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Набор дизайнеров карточек маркетплейсов</title>
+  <meta
+    name="description"
+    content="Набор 4 дизайнеров карточек товаров для Wildberries, Ozon и других маркетплейсов. Долгосрочная работа, реальные заказы, честная оплата."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container header-content">
+      <p class="brand">Design Agency</p>
+      <a class="header-phone" href="tel:+79186360011">+7 918 636 00 11</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="badge">Набор открыт · 4 места в команде</p>
+        <h1>Ищем сильных дизайнеров карточек маркетплейсов</h1>
+        <p class="hero-subtitle">
+          Присоединяйтесь к агентству по созданию продающих карточек для Wildberries, Ozon и других
+          маркетплейсов. Мы ищем 4 лучших дизайнера для долгосрочной работы с реальными заказами,
+          стабильным потоком и честной оплатой.
+        </p>
+        <button class="cta-button" type="button" data-scroll-target="#application">
+          Хочу в команду
+        </button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card-grid">
+        <article class="card">
+          <h2>О проекте и условиях</h2>
+          <p>
+            Агентство занимается созданием продающих карточек. Основатель команды (номер указан ниже)
+            отвечает за поиск клиентов, продажи и контроль задач. Дизайнеры выполняют проекты качественно
+            по техническому заданию (ТЗ).
+          </p>
+          <p>
+            Условия: удалённая работа, оплата за каждый проект, чёткое ТЗ, долгосрочное сотрудничество,
+            деление прибыли 40–50% дизайнеру.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card-grid card-grid--double">
+        <article class="card">
+          <h2>Требования</h2>
+          <ul>
+            <li>Опыт работы с карточками Wildberries и Ozon</li>
+            <li>Актуальное портфолио</li>
+            <li>Соблюдение сроков</li>
+            <li>Ответственность и системный подход</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Этапы отбора</h2>
+          <ol>
+            <li>Заполнение заявки</li>
+            <li>Проверка портфолио (3 лучшие работы)</li>
+            <li>Тестовое задание</li>
+            <li>Формирование основной команды из 4 дизайнеров</li>
+          </ol>
+          <p class="limited-places">Количество мест ограничено.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="application">
+      <div class="container card-grid card-grid--double">
+        <article class="card contact-card">
+          <h2>Контакты</h2>
+          <p class="contact-line">
+            Связь:
+            <a href="tel:+79186360011">+7 918 636 00 11</a>
+            (WhatsApp / Telegram)
+          </p>
+          <div class="messengers">
+            <a class="messenger-link" href="https://wa.me/79186360011" target="_blank" rel="noopener noreferrer">
+              WhatsApp
+            </a>
+            <a class="messenger-link" href="https://t.me/+79186360011" target="_blank" rel="noopener noreferrer">
+              Telegram
+            </a>
+          </div>
+          <p class="note">Ответ обычно в течение дня.</p>
+        </article>
+
+        <article class="card form-card">
+          <h2>Форма заявки</h2>
+          <form id="application-form" novalidate>
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" required placeholder="Ваше имя">
+
+            <label for="telegram">Telegram</label>
+            <input id="telegram" name="telegram" type="text" required placeholder="@username">
+
+            <label for="portfolio">Ссылка на портфолио или 3 лучших работы</label>
+            <input id="portfolio" name="portfolio" type="url" required placeholder="https://">
+
+            <label for="experience">Опыт работы</label>
+            <textarea id="experience" name="experience" rows="4" required placeholder="Опишите релевантный опыт"></textarea>
+
+            <label for="test-task">Готовность выполнить тестовое задание</label>
+            <select id="test-task" name="test-task" required>
+              <option value="" selected disabled>Выберите вариант</option>
+              <option value="yes">Да, готов(а)</option>
+              <option value="no">Нет, пока не готов(а)</option>
+            </select>
+
+            <button class="submit-button" type="submit">Отправить заявку</button>
+            <p id="form-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>📌 ПРЕМИУМ-ПРОМТ ДЛЯ СОЗДАНИЯ САЙТА (4 ДИЗАЙНЕРА)</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
