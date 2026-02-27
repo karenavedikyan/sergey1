@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Набор дизайнеров карточек маркетплейсов</title>
+  <meta
+    name="description"
+    content="Набор 4 дизайнеров карточек товаров для Wildberries, Ozon и других маркетплейсов в дизайн-агентство."
+  />
+  <style>
+    :root {
+      --bg: #0e1013;
+      --bg-soft: #141821;
+      --card: #181d26;
+      --text: #edf0f4;
+      --text-soft: #aeb8c6;
+      --accent: #7c8dff;
+      --accent-strong: #9ca7ff;
+      --border: rgba(255, 255, 255, 0.08);
+      --ok: #7ee0aa;
+      --shadow: 0 14px 40px rgba(6, 8, 12, 0.45);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at 85% 8%, #20263a 0%, var(--bg) 36%) no-repeat, var(--bg);
+      color: var(--text);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.55;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(8px);
+      background: rgba(11, 14, 19, 0.76);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      color: #f4f6fa;
+      font-size: 0.96rem;
+    }
+
+    .header-links {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .header-links a {
+      color: var(--text-soft);
+      font-size: 0.92rem;
+      padding: 6px 8px;
+      border-radius: 10px;
+      transition: color 0.2s ease, background-color 0.2s ease;
+    }
+
+    .header-links a:hover {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .hero {
+      padding: 88px 0 54px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .hero-main {
+      padding: 30px;
+      border-radius: calc(var(--radius) + 2px);
+      background: linear-gradient(165deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--border);
+      color: var(--text-soft);
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 0.82rem;
+      margin-bottom: 18px;
+    }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--ok);
+      box-shadow: 0 0 16px rgba(126, 224, 170, 0.7);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      line-height: 1.2;
+      letter-spacing: 0.2px;
+    }
+
+    .hero-subtitle {
+      margin: 18px 0 28px;
+      color: var(--text-soft);
+      font-size: clamp(1rem, 1.9vw, 1.16rem);
+      max-width: 58ch;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn {
+      border: 1px solid transparent;
+      border-radius: 12px;
+      padding: 12px 18px;
+      font-weight: 600;
+      font-size: 0.98rem;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-align: center;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
+      box-shadow: 0 10px 24px rgba(124, 141, 255, 0.36);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 28px rgba(124, 141, 255, 0.46);
+    }
+
+    .btn-secondary {
+      color: var(--text);
+      border-color: var(--border);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .hero-side {
+      display: grid;
+      gap: 14px;
+      align-content: start;
+    }
+
+    .metric-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .metric-title {
+      margin: 0 0 6px;
+      font-size: 0.9rem;
+      color: var(--text-soft);
+    }
+
+    .metric-value {
+      margin: 0;
+      font-size: clamp(1.3rem, 2.5vw, 1.82rem);
+      font-weight: 700;
+      color: #f7f8fc;
+    }
+
+    .section {
+      padding: 26px 0;
+    }
+
+    .panel {
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: clamp(20px, 4vw, 30px);
+      box-shadow: var(--shadow);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: clamp(1.34rem, 2.2vw, 1.8rem);
+      letter-spacing: 0.15px;
+    }
+
+    .section p {
+      margin: 0;
+      color: var(--text-soft);
+      font-size: 1rem;
+    }
+
+    .conditions {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(120px, 1fr));
+      gap: 10px;
+    }
+
+    .chip {
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.02);
+      padding: 10px 12px;
+      font-size: 0.9rem;
+      color: #d5ddeb;
+      text-align: center;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .list-title {
+      margin: 0 0 10px;
+      font-size: 1.03rem;
+    }
+
+    .list {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--text-soft);
+    }
+
+    .list li + li {
+      margin-top: 8px;
+    }
+
+    .warning {
+      margin-top: 14px;
+      border: 1px solid rgba(255, 202, 130, 0.28);
+      background: rgba(255, 202, 130, 0.08);
+      color: #ffdca6;
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 0.95rem;
+      width: fit-content;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .contact-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .contact-label {
+      margin: 0 0 8px;
+      color: var(--text-soft);
+      font-size: 0.93rem;
+    }
+
+    .contact-phone {
+      font-size: clamp(1.18rem, 2.3vw, 1.5rem);
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      margin: 0;
+    }
+
+    .contact-caption {
+      margin-top: 8px;
+      color: var(--text-soft);
+      font-size: 0.92rem;
+    }
+
+    form {
+      display: grid;
+      gap: 12px;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+
+    label {
+      font-size: 0.9rem;
+      color: var(--text-soft);
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 11px 12px;
+      background: #11151d;
+      color: #f6f8ff;
+      font: inherit;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: rgba(124, 141, 255, 0.68);
+      box-shadow: 0 0 0 4px rgba(124, 141, 255, 0.16);
+    }
+
+    textarea {
+      min-height: 108px;
+      resize: vertical;
+    }
+
+    .form-hint {
+      margin: 2px 0 0;
+      color: var(--text-soft);
+      font-size: 0.85rem;
+    }
+
+    .status {
+      margin: 6px 0 0;
+      min-height: 1.3em;
+      font-size: 0.92rem;
+      color: var(--text-soft);
+    }
+
+    .status.success {
+      color: var(--ok);
+    }
+
+    .site-footer {
+      padding: 34px 0 42px;
+      color: #8e98ab;
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    @media (max-width: 980px) {
+      .hero {
+        padding-top: 62px;
+      }
+
+      .hero-grid,
+      .contact-grid,
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      .conditions {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .header-inner {
+        padding: 10px 0;
+      }
+
+      .header-links {
+        gap: 4px;
+      }
+
+      .header-links a {
+        font-size: 0.85rem;
+      }
+
+      .hero-main {
+        padding: 22px;
+      }
+
+      .conditions {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Marketplace Card Design Agency</div>
+      <nav class="header-links" aria-label="Навигация по странице">
+        <a href="#about">О проекте</a>
+        <a href="#requirements">Требования</a>
+        <a href="#apply">Заявка</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-main">
+          <span class="badge"><span class="badge-dot"></span>Открыт набор в агентство</span>
+          <h1>Ищем сильных дизайнеров карточек маркетплейсов</h1>
+          <p class="hero-subtitle">
+            Присоединяйтесь к агентству по созданию продающих карточек для Wildberries, Ozon и других маркетплейсов.
+            Мы ищем 4 лучших дизайнера для долгосрочной работы с реальными заказами, стабильным потоком и честной оплатой.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#apply">Хочу в команду</a>
+            <a class="btn btn-secondary" href="tel:+79186360011">+7 918 636 00 11</a>
+          </div>
+        </div>
+
+        <aside class="hero-side" aria-label="Ключевые параметры">
+          <article class="metric-card">
+            <p class="metric-title">Формат сотрудничества</p>
+            <p class="metric-value">Удалённо, по проектам</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-title">Оплата дизайнеру</p>
+            <p class="metric-value">40–50% прибыли</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-title">Набор в команду</p>
+            <p class="metric-value">Только 4 места</p>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container panel">
+        <h2>О проекте и условиях</h2>
+        <p>
+          Агентство занимается созданием продающих карточек. Основатель команды (номер указан ниже) отвечает за поиск
+          клиентов, продажи и контроль задач. Дизайнеры выполняют проекты качественно по техническому заданию (ТЗ).
+        </p>
+        <div class="conditions" aria-label="Условия сотрудничества">
+          <div class="chip">Удалённая работа</div>
+          <div class="chip">Оплата за каждый проект</div>
+          <div class="chip">Чёткое ТЗ</div>
+          <div class="chip">Долгосрочное сотрудничество</div>
+          <div class="chip">40–50% дизайнеру</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="requirements" class="section">
+      <div class="container panel">
+        <h2>Требования и отбор</h2>
+        <div class="split">
+          <div>
+            <h3 class="list-title">Требования</h3>
+            <ul class="list">
+              <li>Опыт работы с карточками WB/Ozon и других маркетплейсов.</li>
+              <li>Наличие портфолио с сильными кейсами.</li>
+              <li>Соблюдение сроков и качество исполнения.</li>
+              <li>Ответственность и рабочая коммуникация.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="list-title">Этапы отбора</h3>
+            <ol class="list">
+              <li>Заполнение заявки.</li>
+              <li>Проверка портфолио (3 лучшие работы).</li>
+              <li>Тестовое задание.</li>
+              <li>Формирование основной команды из 4 дизайнеров.</li>
+            </ol>
+          </div>
+        </div>
+        <p class="warning">Количество мест ограничено.</p>
+      </div>
+    </section>
+
+    <section id="apply" class="section">
+      <div class="container panel">
+        <h2>Контакты и форма заявки</h2>
+        <div class="contact-grid">
+          <div class="contact-box">
+            <p class="contact-label">Связь (WhatsApp / Telegram)</p>
+            <p class="contact-phone">
+              <a href="tel:+79186360011" aria-label="Позвонить по номеру +7 918 636 00 11">+7 918 636 00 11</a>
+            </p>
+            <p class="contact-caption">
+              Нажмите на номер для быстрого контакта. Также можно отправить заявку через форму — мы свяжемся после
+              проверки портфолио.
+            </p>
+          </div>
+
+          <div class="contact-box">
+            <form id="application-form" novalidate>
+              <div class="field">
+                <label for="name">Имя</label>
+                <input id="name" name="name" type="text" required />
+              </div>
+
+              <div class="field">
+                <label for="telegram">Telegram</label>
+                <input id="telegram" name="telegram" type="text" placeholder="@username" required />
+              </div>
+
+              <div class="field">
+                <label for="portfolio">Ссылка на портфолио или 3 лучшие работы</label>
+                <textarea id="portfolio" name="portfolio" required></textarea>
+              </div>
+
+              <div class="field">
+                <label for="experience">Опыт работы</label>
+                <textarea id="experience" name="experience" required></textarea>
+              </div>
+
+              <div class="field">
+                <label for="test-ready">Готовность выполнить тестовое задание</label>
+                <select id="test-ready" name="test-ready" required>
+                  <option value="">Выберите вариант</option>
+                  <option value="Да, готов(а)">Да, готов(а)</option>
+                  <option value="Нужно уточнить детали">Нужно уточнить детали</option>
+                </select>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Отправить заявку</button>
+              <p class="form-hint">После отправки мы свяжемся в Telegram или по номеру телефона.</p>
+              <p id="form-status" class="status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Набор дизайнеров карточек маркетплейсов · 2026
+  </footer>
+
+  <script>
+    const form = document.getElementById("application-form");
+    const statusNode = document.getElementById("form-status");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const fields = ["name", "telegram", "portfolio", "experience", "test-ready"];
+      let isValid = true;
+
+      for (const id of fields) {
+        const field = document.getElementById(id);
+        const value = field.value.trim();
+        if (!value) {
+          isValid = false;
+          field.setAttribute("aria-invalid", "true");
+        } else {
+          field.removeAttribute("aria-invalid");
+        }
+      }
+
+      if (!isValid) {
+        statusNode.className = "status";
+        statusNode.textContent = "Пожалуйста, заполните все поля формы.";
+        return;
+      }
+
+      statusNode.className = "status success";
+      statusNode.textContent = "Заявка принята. Спасибо! Мы свяжемся с вами после проверки портфолио.";
+      form.reset();
+    });
+  </script>
+</body>
+</html>
