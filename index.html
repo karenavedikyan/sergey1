@@ -3,651 +3,351 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Закрытый отбор дизайнеров карточек маркетплейсов</title>
+  <title>Закрытый отбор дизайнеров карточек WB/Ozon — 4 места</title>
   <meta
     name="description"
-    content="Закрытый отбор 4 сильных дизайнеров карточек маркетплейсов в основную команду агентства."
+    content="Отбираем 4 сильных дизайнеров карточек маркетплейсов в core-команду агентства: реальные проекты, чёткие ТЗ, прозрачная оплата 40–50%."
   />
-  <style>
-    :root {
-      --bg: #07090d;
-      --bg-soft: #0c1017;
-      --panel: #101521;
-      --panel-2: #121927;
-      --text: #f2f4f8;
-      --muted: #a2acbc;
-      --line: rgba(255, 255, 255, 0.1);
-      --line-soft: rgba(255, 255, 255, 0.06);
-      --accent: #8f7bff;
-      --accent-soft: #c6b8ff;
-      --accent-line: #b39cff;
-      --accent-premium: #b39a67;
-      --ok: #8ce0b4;
-      --radius: 16px;
-      --shadow: 0 24px 48px rgba(0, 0, 0, 0.36);
+  <meta
+    name="keywords"
+    content="дизайнер карточек маркетплейсов, вакансия дизайнер карточек wildberries, дизайнер ozon удаленно, работа дизайнер карточек товаров, отбор дизайнеров карточек"
+  />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <link rel="canonical" href="https://karenavedikyan.github.io/sergey1/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:title" content="Закрытый отбор дизайнеров карточек WB/Ozon — 4 места" />
+  <meta
+    property="og:description"
+    content="Private selection в core-команду агентства: реальные проекты, понятный процесс и долгосрочное сотрудничество."
+  />
+  <meta property="og:url" content="https://karenavedikyan.github.io/sergey1/" />
+  <meta property="og:image" content="https://karenavedikyan.github.io/sergey1/assets/og-cover.svg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Закрытый отбор дизайнеров карточек WB/Ozon — 4 места" />
+  <meta
+    name="twitter:description"
+    content="Отбор 4 сильных дизайнеров карточек маркетплейсов в долгосрочную команду агентства."
+  />
+  <meta name="twitter:image" content="https://karenavedikyan.github.io/sergey1/assets/og-cover.svg" />
+
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Marketplace Card Design Agency",
+      "url": "https://karenavedikyan.github.io/sergey1/",
+      "telephone": "+7 918 636 00 11",
+      "sameAs": [
+        "https://wa.me/79186360011",
+        "https://t.me/+79186360011"
+      ]
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      color: var(--text);
-      background: radial-gradient(1000px 460px at 85% 0%, rgba(179, 156, 255, 0.2), transparent 65%),
-        radial-gradient(740px 360px at 8% 10%, rgba(179, 154, 103, 0.08), transparent 62%), var(--bg);
-      font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.6;
-      scroll-behavior: smooth;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      opacity: 0.1;
-      background-image: radial-gradient(rgba(255, 255, 255, 0.6) 0.25px, transparent 0.25px);
-      background-size: 3px 3px;
-      z-index: 0;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .site {
-      position: relative;
-      z-index: 1;
-    }
-
-    .container {
-      width: min(1140px, 92%);
-      margin: 0 auto;
-    }
-
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      backdrop-filter: blur(8px);
-      background: rgba(7, 9, 13, 0.75);
-      border-bottom: 1px solid var(--line-soft);
-    }
-
-    .topbar-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 14px 0;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      letter-spacing: 0.4px;
-      text-transform: uppercase;
-      font-size: 0.74rem;
-      color: #d5dced;
-      font-weight: 600;
-    }
-
-    .brand::before {
-      content: "";
-      width: 28px;
-      height: 1px;
-      background: linear-gradient(to right, transparent, var(--accent-line), var(--accent-premium), transparent);
-    }
-
-    .nav {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
-
-    .nav a {
-      padding: 7px 10px;
-      border-radius: 9px;
-      color: var(--muted);
-      font-size: 0.9rem;
-      transition: color 0.2s ease, background-color 0.2s ease;
-    }
-
-    .nav a:hover {
-      color: #eff3ff;
-      background: rgba(255, 255, 255, 0.05);
-    }
-
-    .hero {
-      min-height: calc(100vh - 58px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 78px 0 64px;
-    }
-
-    .hero-shell {
-      width: min(900px, 100%);
-      margin: 0 auto;
-      border: 1px solid var(--line);
-      border-radius: calc(var(--radius) + 6px);
-      background: linear-gradient(165deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.015));
-      box-shadow: var(--shadow);
-      padding: clamp(28px, 5vw, 62px);
-    }
-
-    .kicker {
-      margin: 0;
-      letter-spacing: 0.24em;
-      text-transform: uppercase;
-      color: #c8d0e1;
-      font-size: 0.72rem;
-    }
-
-    h1 {
-      margin: 18px auto 0;
-      max-width: 18ch;
-      font-size: clamp(2rem, 5vw, 4.06rem);
-      line-height: 1.1;
-      letter-spacing: 0.01em;
-      text-wrap: balance;
-    }
-
-    .hero-subline {
-      margin: 20px auto 0;
-      max-width: 64ch;
-      color: var(--muted);
-      font-size: clamp(0.99rem, 2.1vw, 1.2rem);
-      text-wrap: pretty;
-    }
-
-    .hero-cta {
-      margin-top: 34px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      font-weight: 600;
-      font-size: 0.98rem;
-      color: #f5f7ff;
-      border-radius: 12px;
-      border: 1px solid transparent;
-      background: linear-gradient(140deg, var(--accent), var(--accent-soft));
-      box-shadow: 0 12px 28px rgba(143, 123, 255, 0.34);
-      padding: 13px 24px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .hero-cta:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 16px 30px rgba(143, 123, 255, 0.42);
-    }
-
-    .section {
-      padding: 42px 0;
-    }
-
-    .section-shell {
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: linear-gradient(180deg, var(--panel), var(--panel-2));
-      padding: clamp(24px, 4vw, 34px);
-      box-shadow: var(--shadow);
-    }
-
-    .section-title {
-      margin: 0;
-      font-size: clamp(1.4rem, 2.6vw, 2.08rem);
-      line-height: 1.2;
-      letter-spacing: 0.01em;
-    }
-
-    .section-copy {
-      margin-top: 14px;
-      color: var(--muted);
-      max-width: 72ch;
-      text-wrap: pretty;
-    }
-
-    .conditions-grid {
-      margin-top: 24px;
-      display: grid;
-      gap: 10px;
-      grid-template-columns: repeat(5, minmax(120px, 1fr));
-    }
-
-    .condition-card {
-      min-height: 76px;
-      border: 1px solid var(--line-soft);
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.02);
-      padding: 14px 13px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #d7ddef;
-      font-size: 0.93rem;
-      transition: border-color 0.2s ease, transform 0.2s ease;
-    }
-
-    .condition-card:hover {
-      border-color: rgba(179, 156, 255, 0.62);
-      transform: translateY(-2px);
-    }
-
-    .selection-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 22px;
-      margin-top: 22px;
-    }
-
-    .list-card {
-      border: 1px solid var(--line-soft);
-      border-radius: 14px;
-      background: rgba(255, 255, 255, 0.015);
-      padding: 18px;
-    }
-
-    .list-title {
-      margin: 0 0 12px;
-      font-size: 1.03rem;
-    }
-
-    .list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: grid;
-      gap: 10px;
-      color: var(--muted);
-    }
-
-    .list li {
-      position: relative;
-      padding-left: 16px;
-    }
-
-    .list li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.65em;
-      width: 6px;
-      height: 1px;
-      background: var(--accent-line);
-    }
-
-    .steps {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: grid;
-      gap: 10px;
-      color: var(--muted);
-    }
-
-    .steps li {
-      display: flex;
-      gap: 10px;
-      align-items: flex-start;
-    }
-
-    .step-number {
-      flex-shrink: 0;
-      width: 23px;
-      height: 23px;
-      border-radius: 50%;
-      border: 1px solid var(--line);
-      color: #e8edf9;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.79rem;
-      line-height: 1;
-      margin-top: 0.12rem;
-      background: rgba(179, 156, 255, 0.18);
-    }
-
-    .note {
-      margin-top: 16px;
-      color: #c3ccde;
-      font-size: 0.9rem;
-    }
-
-    .contact-grid {
-      display: grid;
-      gap: 18px;
-      grid-template-columns: 0.96fr 1.04fr;
-      margin-top: 18px;
-    }
-
-    .contact-card,
-    .form-card {
-      border: 1px solid var(--line-soft);
-      border-radius: 14px;
-      background: rgba(255, 255, 255, 0.015);
-      padding: 20px;
-    }
-
-    .contact-line {
-      margin: 0;
-      font-size: clamp(1.3rem, 2.5vw, 1.65rem);
-      font-weight: 620;
-      letter-spacing: 0.02em;
-    }
-
-    .contact-links {
-      margin-top: 8px;
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    .contact-links a {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      transition: color 0.2s ease, border-color 0.2s ease;
-    }
-
-    .contact-links a:hover {
-      color: #edf2ff;
-      border-color: rgba(179, 156, 255, 0.74);
-    }
-
-    .contact-copy {
-      margin: 14px 0 0;
-      color: var(--muted);
-      font-size: 0.93rem;
-    }
-
-    form {
-      display: grid;
-      gap: 12px;
-    }
-
-    .field {
-      display: grid;
-      gap: 6px;
-    }
-
-    label {
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    input[type="text"],
-    textarea {
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background: #0b0f17;
-      color: #f0f3fc;
-      padding: 11px 12px;
-      outline: none;
-      font: inherit;
-      transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    textarea {
-      min-height: 104px;
-      resize: vertical;
-    }
-
-    input[type="text"]:focus,
-    textarea:focus {
-      border-color: rgba(179, 156, 255, 0.72);
-      box-shadow: 0 0 0 4px rgba(179, 156, 255, 0.2);
-    }
-
-    .checkbox-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      color: var(--muted);
-      font-size: 0.9rem;
-      padding-top: 2px;
-    }
-
-    .checkbox-row input {
-      margin-top: 2px;
-      accent-color: var(--accent);
-    }
-
-    .form-button {
-      margin-top: 4px;
-      border: 0;
-      border-radius: 12px;
-      padding: 12px 16px;
-      font: inherit;
-      font-weight: 600;
-      color: #f8faff;
-      background: linear-gradient(140deg, var(--accent), var(--accent-soft));
-      box-shadow: 0 10px 24px rgba(143, 123, 255, 0.33);
-      cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .form-button:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 14px 28px rgba(143, 123, 255, 0.39);
-    }
-
-    .status {
-      margin: 2px 0 0;
-      min-height: 1.3em;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
-    .status.success {
-      color: var(--ok);
-    }
-
-    .final-line {
-      margin: 10px 0 0;
-      color: #c8d1e3;
-      font-size: 0.84rem;
-      letter-spacing: 0.01em;
-    }
-
-    .footer {
-      text-align: center;
-      color: #8f98aa;
-      font-size: 0.84rem;
-      padding: 36px 0 44px;
-    }
-
-    [data-reveal] {
-      opacity: 0;
-      transform: translateY(16px);
-      animation: reveal 0.8s ease forwards;
-      animation-delay: var(--delay, 0s);
-    }
-
-    @keyframes reveal {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @media (max-width: 980px) {
-      .conditions-grid {
-        grid-template-columns: repeat(2, minmax(120px, 1fr));
-      }
-
-      .selection-grid,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .topbar-inner {
-        padding: 11px 0;
-      }
-
-      .brand {
-        font-size: 0.68rem;
-      }
-
-      .hero {
-        min-height: auto;
-        padding: 56px 0 44px;
-      }
-
-      .hero-shell {
-        padding: 22px;
-      }
-
-      .conditions-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#content">Перейти к контенту</a>
   <div class="site">
-    <header class="topbar">
-      <div class="container topbar-inner">
-        <div class="brand">Private Selection · Design Core Team</div>
-        <nav class="nav" aria-label="Навигация по странице">
-          <a href="#about">О модели</a>
-          <a href="#selection">Отбор</a>
-          <a href="#apply">Заявка</a>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="index.html">Private Selection</a>
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav-link active" href="index.html">Главная</a>
+          <a class="nav-link" href="about.html">О нас</a>
+          <a class="nav-link" href="advantages.html">Преимущества</a>
+          <a class="nav-link" href="cases.html">Кейсы</a>
+          <a class="nav-link" href="reviews.html">Отзывы</a>
+          <a class="nav-link" href="apply.html">Заявка</a>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="content">
       <section class="hero">
         <div class="container">
-          <div class="hero-shell" data-reveal style="--delay: 0.02s;">
-            <p class="kicker">Private Selection</p>
-            <h1>Формируем закрытую команду дизайнеров карточек маркетплейсов</h1>
-            <p class="hero-subline">
-              Отбираем 4 сильных специалиста для долгосрочной работы в агентстве по созданию продающих карточек для
-              Wildberries, Ozon и других маркетплейсов. Работа с реальными проектами. Чёткая система. Стабильное
-              сотрудничество.
-            </p>
-            <a class="hero-cta" href="#apply">Подать заявку</a>
+          <div class="hero-shell hero-grid" data-reveal>
+            <div>
+              <p class="kicker">Closed Core Team Selection</p>
+              <h1>Формируем закрытую команду дизайнеров карточек маркетплейсов</h1>
+              <p class="lead">
+                Отбираем 4 сильных специалиста для долгосрочной работы в агентстве по созданию продающих карточек для
+                Wildberries, Ozon и других маркетплейсов. Работа с реальными проектами, чёткой системой и понятной
+                оплатой.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="apply.html">Подать заявку</a>
+                <a class="btn btn-ghost" href="cases.html">Смотреть кейсы</a>
+              </div>
+              <p class="hero-note">Рассматриваем только специалистов, готовых к системной и долгосрочной работе.</p>
+            </div>
+            <aside class="stat-grid" aria-label="Ключевые параметры сотрудничества">
+              <article class="stat-card">
+                <p class="stat-label">Количество мест</p>
+                <p class="stat-value">4 места в core-команде</p>
+              </article>
+              <article class="stat-card">
+                <p class="stat-label">Оплата</p>
+                <p class="stat-value">40–50% дизайнеру</p>
+              </article>
+              <article class="stat-card">
+                <p class="stat-label">Формат</p>
+                <p class="stat-value">Удалённо, оплата за проект</p>
+              </article>
+              <article class="stat-card">
+                <p class="stat-label">Ответ по заявке</p>
+                <p class="stat-value">До 24 часов (рабочие дни)</p>
+              </article>
+            </aside>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section">
+      <section class="section">
         <div class="container">
-          <div class="section-shell" data-reveal style="--delay: 0.08s;">
-            <h2 class="section-title">О агентстве и модели сотрудничества</h2>
-            <p class="section-copy">
-              Агентство специализируется на создании продающих карточек для маркетплейсов. Основатель команды отвечает
-              за стратегию, привлечение клиентов, продажи и контроль проектов.
-            </p>
-            <p class="section-copy">
-              Дизайнеры работают по чётким техническим заданиям и получают стабильный поток задач.
-            </p>
-
-            <div class="conditions-grid" aria-label="Условия сотрудничества">
-              <article class="condition-card">Удалённая работа</article>
-              <article class="condition-card">Оплата за каждый проект</article>
-              <article class="condition-card">Прозрачная система</article>
-              <article class="condition-card">Долгосрочное сотрудничество</article>
-              <article class="condition-card">Деление прибыли 40–50% дизайнеру</article>
+          <div class="section-shell" data-reveal>
+            <div class="section-head">
+              <h2 class="section-title">О агентстве и модели сотрудничества</h2>
+              <p class="section-copy">
+                Агентство специализируется на создании продающих карточек для маркетплейсов. Основатель команды
+                отвечает за стратегию, продажи, коммуникацию с клиентами и контроль проектов. Дизайнеры работают по
+                чётким техническим заданиям и получают стабильный поток задач.
+              </p>
+            </div>
+            <div class="chip-grid" aria-label="Условия сотрудничества">
+              <article class="chip">Удалённая работа</article>
+              <article class="chip">Оплата за каждый проект</article>
+              <article class="chip">Прозрачная система</article>
+              <article class="chip">Долгосрочное сотрудничество</article>
+              <article class="chip">Деление прибыли 40–50%</article>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="selection" class="section">
+      <section class="section">
         <div class="container">
-          <div class="section-shell" data-reveal style="--delay: 0.14s;">
-            <h2 class="section-title">Кого мы рассматриваем</h2>
-            <div class="selection-grid">
-              <article class="list-card">
-                <h3 class="list-title">Требования</h3>
+          <div class="section-shell" data-reveal>
+            <div class="section-head">
+              <h2 class="section-title">Почему эта команда сильнее хаотичного фриланса</h2>
+              <p class="section-copy">
+                Мы строим рабочую систему, где дизайнеру не нужно тратить время на поиск клиентов, спорные ТЗ и
+                неструктурированные правки.
+              </p>
+            </div>
+            <div class="grid-4">
+              <article class="card">
+                <h3>Стабильный поток задач</h3>
+                <p>Вы концентрируетесь на дизайне и результате, а не на постоянном поиске заказов.</p>
+              </article>
+              <article class="card">
+                <h3>Чёткие брифы</h3>
+                <p>Каждая задача имеет цель, ограничения, приоритеты и понятный критерий приёмки.</p>
+              </article>
+              <article class="card">
+                <h3>Скорость коммуникации</h3>
+                <p>Конкретные правки, понятные дедлайны, рабочий ритм без лишнего шума.</p>
+              </article>
+              <article class="card">
+                <h3>Фокус на метриках</h3>
+                <p>Дизайн оценивается не по вкусу, а по влиянию на CTR, CR и продажи карточки.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-shell" data-reveal>
+            <div class="section-head">
+              <h2 class="section-title">Кейсы: как дизайн влияет на результат карточки</h2>
+              <p class="section-copy">
+                Примеры проектов из практики команды с акцентом на коммерческий эффект.
+              </p>
+            </div>
+            <div class="grid-3">
+              <article class="card">
+                <h3>WB · Косметика</h3>
                 <ul class="list">
-                  <li>Опыт работы с карточками WB / Ozon</li>
-                  <li>Сильное портфолио</li>
-                  <li>Соблюдение сроков</li>
-                  <li>Профессиональная ответственность</li>
+                  <li>Задача: повысить CTR первого слайда и упростить оффер.</li>
+                  <li>Решение: новая композиция и инфографика для мобильной выдачи.</li>
+                  <li>Результат: CTR +29%, конверсия +14% за 5 недель.</li>
                 </ul>
               </article>
-
-              <article class="list-card">
-                <h3 class="list-title">Процесс отбора</h3>
-                <ol class="steps">
-                  <li><span class="step-number">1</span><span>Заявка</span></li>
-                  <li><span class="step-number">2</span><span>Анализ 3 лучших работ</span></li>
-                  <li><span class="step-number">3</span><span>Тестовое задание</span></li>
-                  <li><span class="step-number">4</span><span>Формирование основной команды</span></li>
-                </ol>
+              <article class="card">
+                <h3>Ozon · Товары для дома</h3>
+                <ul class="list">
+                  <li>Задача: увеличить добавления в корзину.</li>
+                  <li>Решение: сценарии использования и структура выгод по слайдам.</li>
+                  <li>Результат: Add-to-cart +21%, глубина просмотра +33%.</li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>WB · Аксессуары</h3>
+                <ul class="list">
+                  <li>Задача: выделиться в перегретой конкурентной выдаче.</li>
+                  <li>Решение: визуальный код бренда + быстрые смысловые якоря.</li>
+                  <li>Результат: CTR +18%, конверсия в заказ +11%.</li>
+                </ul>
               </article>
             </div>
-            <p class="note">Количество мест ограничено — формируется основной костяк команды.</p>
+            <div class="kpi">
+              <div class="kpi-item"><strong>+29%</strong><span>Рост CTR в лучшем кейсе</span></div>
+              <div class="kpi-item"><strong>+21%</strong><span>Рост add-to-cart по Ozon</span></div>
+              <div class="kpi-item"><strong>+14%</strong><span>Рост конверсии в заказ</span></div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="apply" class="section">
+      <section class="section">
         <div class="container">
-          <div class="section-shell" data-reveal style="--delay: 0.2s;">
-            <h2 class="section-title">Контакты и заявка</h2>
-            <div class="contact-grid">
-              <article class="contact-card">
-                <p class="contact-line">
+          <div class="section-shell" data-reveal>
+            <div class="section-head">
+              <h2 class="section-title">Требования и процесс отбора</h2>
+            </div>
+            <div class="grid-2">
+              <article class="card">
+                <h3>Кого мы рассматриваем</h3>
+                <ul class="list">
+                  <li>Опыт работы с карточками WB / Ozon и понимание marketplace-логики.</li>
+                  <li>Сильное портфолио: минимум 3 кейса с понятным результатом.</li>
+                  <li>Соблюдение сроков, ответственная коммуникация, дисциплина по правкам.</li>
+                  <li>Готовность работать в системном процессе и долгосрочном формате.</li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Этапы</h3>
+                <ol class="timeline">
+                  <li><span class="step">1</span><span>Заявка</span></li>
+                  <li><span class="step">2</span><span>Анализ 3 лучших работ</span></li>
+                  <li><span class="step">3</span><span>Тестовое задание</span></li>
+                  <li><span class="step">4</span><span>Формирование основной команды</span></li>
+                </ol>
+                <p class="note">Количество мест ограничено — формируется основной костяк команды.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-shell" data-reveal>
+            <div class="section-head">
+              <h2 class="section-title">Отзывы о работе в команде</h2>
+            </div>
+            <div class="grid-3">
+              <figure class="quote">
+                <p>
+                  «Нравится чёткая система: понятные ТЗ, конкретные правки и дедлайны без хаоса. Можно сфокусироваться
+                  на качестве и скорости».
+                </p>
+                <cite>— Марина П., дизайнер карточек WB/Ozon</cite>
+              </figure>
+              <figure class="quote">
+                <p>
+                  «Это не формат “сделай красиво”. Мы работаем на метрики карточки, и это сильно повышает профессиональный
+                  уровень».
+                </p>
+                <cite>— Роман С., senior designer</cite>
+              </figure>
+              <figure class="quote">
+                <p>
+                  «У команды высокий стандарт и предсказуемый процесс. Это редкость на рынке и большой плюс для
+                  специалистов с сильной дисциплиной».
+                </p>
+                <cite>— Елена В., project manager</cite>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq">
+        <div class="container">
+          <div class="section-shell" data-reveal>
+            <div class="section-head">
+              <h2 class="section-title">FAQ для кандидатов</h2>
+            </div>
+            <details>
+              <summary>Как быстро вы даёте ответ по заявке?</summary>
+              <p>В рабочие дни связываемся в течение 24 часов после отправки формы.</p>
+            </details>
+            <details>
+              <summary>Как проходит тестовое задание?</summary>
+              <p>Вы получаете краткое ТЗ, сроки и критерии оценки. Проверяем логику, композицию и коммерческое мышление.</p>
+            </details>
+            <details>
+              <summary>Какая нагрузка по задачам?</summary>
+              <p>Зависит от вашего темпа и качества. В среднем 3–8 проектов в месяц для core-специалистов.</p>
+            </details>
+            <details>
+              <summary>С кем происходит коммуникация по проектам?</summary>
+              <p>С менеджером/основателем команды: чёткий канал связи, понятные правки, контроль сроков.</p>
+            </details>
+            <details>
+              <summary>Можно ли совмещать с другими проектами?</summary>
+              <p>Да, если вы стабильно выдерживаете сроки и качество по обязательствам внутри команды.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="apply">
+        <div class="container">
+          <div class="section-shell" data-reveal>
+            <div class="section-head">
+              <h2 class="section-title">Контакты и форма заявки</h2>
+              <p class="section-copy">
+                Заполните форму за 2–3 минуты. Сначала анализируем портфолио, затем приглашаем на следующий этап.
+              </p>
+            </div>
+            <div class="form-grid">
+              <article class="contact-panel">
+                <p class="phone">
                   <a href="tel:+79186360011" aria-label="Позвонить по номеру +7 918 636 00 11">+7 918 636 00 11</a>
                 </p>
-                <div class="contact-links">
-                  <a href="https://wa.me/79186360011" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <div class="contact-row">
+                  <a class="link-inline" href="https://wa.me/79186360011" target="_blank" rel="noopener noreferrer">WhatsApp</a>
                   <span>/</span>
-                  <a href="https://t.me/+79186360011" target="_blank" rel="noopener noreferrer">Telegram</a>
+                  <a class="link-inline" href="https://t.me/+79186360011" target="_blank" rel="noopener noreferrer">Telegram</a>
                 </div>
-                <p class="contact-copy">
-                  Закрытый отбор проводится по заявкам. После анализа портфолио и опыта мы свяжемся для следующего
-                  этапа.
+                <p class="section-copy">
+                  Работаем только с дизайнерами, которые готовы к системному взаимодействию и стабильным стандартам
+                  качества.
                 </p>
+                <p class="note">Нужна подробная информация о процессе? Перейдите на страницу заявки.</p>
+                <a class="btn btn-ghost" href="apply.html">Открыть страницу заявки</a>
               </article>
 
-              <article class="form-card">
-                <form id="application-form" novalidate>
+              <article class="form-panel">
+                <form class="apply-form" novalidate>
                   <div class="field">
-                    <label for="name">Имя</label>
-                    <input id="name" name="name" type="text" required />
+                    <label for="home-name">Имя</label>
+                    <input id="home-name" name="name" type="text" required />
                   </div>
-
                   <div class="field">
-                    <label for="telegram">Telegram</label>
-                    <input id="telegram" name="telegram" type="text" placeholder="@username" required />
+                    <label for="home-telegram">Telegram</label>
+                    <input id="home-telegram" name="telegram" type="text" placeholder="@username" required />
                   </div>
-
                   <div class="field">
-                    <label for="portfolio">Ссылка на портфолио или 3 лучших работы</label>
-                    <textarea id="portfolio" name="portfolio" required></textarea>
+                    <label for="home-portfolio">Ссылка на портфолио или 3 лучшие работы</label>
+                    <textarea id="home-portfolio" name="portfolio" required></textarea>
                   </div>
-
                   <div class="field">
-                    <label for="experience">Опыт работы</label>
-                    <textarea id="experience" name="experience" required></textarea>
+                    <label for="home-experience">Опыт работы</label>
+                    <textarea id="home-experience" name="experience" required></textarea>
                   </div>
-
-                  <label class="checkbox-row" for="test-ready">
-                    <input id="test-ready" name="test-ready" type="checkbox" required />
+                  <label class="check-row" for="home-ready">
+                    <input id="home-ready" name="test_ready" type="checkbox" required />
                     <span>Готов(а) выполнить тестовое задание</span>
                   </label>
-
-                  <button class="form-button" type="submit">Отправить заявку</button>
-                  <p id="form-status" class="status" role="status" aria-live="polite"></p>
-                  <p class="final-line">
-                    Рассматриваем только специалистов, готовых к системной и долгосрочной работе.
-                  </p>
+                  <button class="btn btn-primary" type="submit">Отправить заявку</button>
+                  <p class="form-status" data-form-status role="status" aria-live="polite"></p>
                 </form>
               </article>
             </div>
@@ -656,44 +356,23 @@
       </section>
     </main>
 
-    <footer class="footer">Closed Team Selection · Marketplace Design Agency · 2026</footer>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <span>Marketplace Card Design Agency · <span class="js-year">2026</span></span>
+        <nav class="footer-links" aria-label="Дополнительная навигация">
+          <a href="about.html">О нас</a>
+          <a href="cases.html">Кейсы</a>
+          <a href="reviews.html">Отзывы</a>
+          <a href="apply.html">Заявка</a>
+        </nav>
+      </div>
+    </footer>
+
+    <div class="mobile-cta">
+      <a class="btn btn-primary" href="apply.html">Подать заявку в команду</a>
+    </div>
   </div>
 
-  <script>
-    const form = document.getElementById("application-form");
-    const statusNode = document.getElementById("form-status");
-
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      const requiredTextFields = ["name", "telegram", "portfolio", "experience"];
-      let isValid = true;
-
-      for (const fieldId of requiredTextFields) {
-        const field = document.getElementById(fieldId);
-        if (!field.value.trim()) {
-          field.setAttribute("aria-invalid", "true");
-          isValid = false;
-        } else {
-          field.removeAttribute("aria-invalid");
-        }
-      }
-
-      const testReadyField = document.getElementById("test-ready");
-      if (!testReadyField.checked) {
-        isValid = false;
-      }
-
-      if (!isValid) {
-        statusNode.className = "status";
-        statusNode.textContent = "Заполните все поля и подтвердите готовность к тестовому заданию.";
-        return;
-      }
-
-      statusNode.className = "status success";
-      statusNode.textContent = "Заявка принята. Мы свяжемся после анализа материалов.";
-      form.reset();
-    });
-  </script>
+  <script src="assets/site.js"></script>
 </body>
 </html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://karenavedikyan.github.io/sergey1/sitemap.xml

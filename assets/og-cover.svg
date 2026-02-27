@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title id="t">Closed Selection - Marketplace Card Designers</title>
+  <desc id="d">Premium dark visual with lavender accent for social sharing.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07090d"/>
+      <stop offset="100%" stop-color="#111726"/>
+    </linearGradient>
+    <radialGradient id="lav" cx="0.86" cy="0.08" r="0.7">
+      <stop offset="0%" stop-color="#b39cff" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#b39cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gold" cx="0.08" cy="0.12" r="0.55">
+      <stop offset="0%" stop-color="#b39a67" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#b39a67" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#lav)"/>
+  <rect width="1200" height="630" fill="url(#gold)"/>
+  <g fill="none" stroke="#b39cff" stroke-opacity="0.45">
+    <line x1="112" y1="134" x2="332" y2="134"/>
+    <line x1="112" y1="498" x2="420" y2="498"/>
+  </g>
+  <text x="112" y="208" fill="#dbe3f8" font-size="32" font-family="Inter, Arial, sans-serif" letter-spacing="8">PRIVATE SELECTION</text>
+  <text x="112" y="308" fill="#f5f8ff" font-size="68" font-weight="700" font-family="Inter, Arial, sans-serif">Marketplace Card</text>
+  <text x="112" y="384" fill="#f5f8ff" font-size="68" font-weight="700" font-family="Inter, Arial, sans-serif">Design Team</text>
+  <text x="112" y="450" fill="#b9c5dd" font-size="30" font-family="Inter, Arial, sans-serif">4 elite designers · WB / Ozon · Long-term agency core</text>
+</svg>
