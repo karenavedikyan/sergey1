@@ -668,6 +668,153 @@ table.compare td {
   padding: 13px 16px;
 }
 
+/* RemCard home-specific visual system */
+body.home-remcard {
+  --accent: #ff4e4e;
+  --accent-soft: #ff7a67;
+  --accent-line: #ff6666;
+  --premium: #ff9b62;
+  background:
+    radial-gradient(900px 420px at 86% 0%, rgba(255, 78, 78, 0.24), transparent 62%),
+    radial-gradient(620px 300px at 8% 8%, rgba(255, 155, 98, 0.12), transparent 62%),
+    #090b0f;
+}
+
+body.home-remcard .site-header {
+  border-bottom-color: rgba(255, 255, 255, 0.04);
+  background: rgba(7, 9, 12, 0.86);
+}
+
+body.home-remcard .nav-link.active {
+  background: rgba(255, 78, 78, 0.18);
+  border-color: rgba(255, 120, 99, 0.44);
+}
+
+.remcard-hero {
+  padding: 64px 0 42px;
+}
+
+.remcard-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+body.home-remcard .hero-shell {
+  border-color: rgba(255, 255, 255, 0.04);
+  background: linear-gradient(170deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.008));
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.32);
+}
+
+body.home-remcard h1 {
+  max-width: 14ch;
+  font-size: clamp(2.2rem, 5.8vw, 4.4rem);
+  letter-spacing: 0;
+}
+
+body.home-remcard .lead {
+  max-width: 52ch;
+}
+
+.navigator-preview {
+  border-radius: 14px;
+  padding: 14px;
+  background: rgba(11, 15, 22, 0.82);
+}
+
+.nav-preview-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.nav-preview-head strong {
+  font-size: 1.02rem;
+}
+
+.nav-preview-head span {
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+.route-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 7px;
+}
+
+.route-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #c8d2e5;
+  font-size: 0.9rem;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.route-list li span:first-child {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.8rem;
+}
+
+.route-list li.done span:first-child {
+  border-color: rgba(255, 78, 78, 0.45);
+  background: rgba(255, 78, 78, 0.2);
+}
+
+.route-list li.current {
+  background: rgba(255, 78, 78, 0.16);
+  color: #f8dde0;
+}
+
+.route-list li.current span:first-child {
+  border-color: rgba(255, 118, 109, 0.8);
+  background: rgba(255, 118, 109, 0.28);
+}
+
+.route-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.remcard-section {
+  padding-top: 14px;
+}
+
+body.home-remcard .remcard-section .section-shell {
+  background: rgba(17, 23, 34, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+}
+
+.remcard-mini-grid,
+.remcard-preview-grid {
+  gap: 10px;
+}
+
+.remcard-mini-card {
+  border: 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.remcard-final {
+  padding-bottom: 32px;
+}
+
 [data-reveal] {
   opacity: 0;
   transform: translateY(16px);
@@ -691,6 +838,7 @@ table.compare td {
 
 @media (max-width: 920px) {
   .hero-grid,
+  .remcard-hero-grid,
   .form-grid,
   .grid-3,
   .grid-2,
@@ -727,5 +875,9 @@ table.compare td {
 
   .mobile-cta {
     display: block;
+  }
+
+  body.home-remcard h1 {
+    font-size: clamp(1.9rem, 9vw, 2.7rem);
   }
 }
